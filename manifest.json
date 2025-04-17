@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Ethan's YouTube Pause Lock",
+  "version": "1.0",
+  "description": "Prevents Ethan pausing a YouTube video again within 1 minute after resuming playback.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "128": "icon128.png"
+  }
+}
